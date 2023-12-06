@@ -1,0 +1,41 @@
+@use "../../../Styles/Variables";
+nav {
+  background-color: Variables.$navVsFooterBg;
+  padding-block: 15px;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  .nav-icon {
+    font-size: Variables.$iconsSize;
+  }
+  i {
+    font-size: Variables.$mediumTextSize;
+  }
+  ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-inline: 60px;
+    gap: 40px;
+    .break {
+      margin-left: auto;
+    }
+  }
+  button {
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    outline: none;
+    color: Variables.$fontColorLight;
+    cursor: pointer;
+  }
+}
+.nav-up {
+  transform: translateY(-90px);
+}
+.nav-mobile-menu {
+  display: none;
+  transition-duration: 0.5s;
+}
+.menu-toggle {
+  transform: translateX(134px);
+}

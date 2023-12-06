@@ -1,0 +1,9 @@
+@use "./Variables";
+@use "./Global";
+@use "../Components/Layout/Footer/Footer";
+@use "../Components/Layout/Contact/Contact";
+@use "../Components/Layout/Header/Header";
+@use "../Components/Layout/Navbar/Navbar";
+@use "../Components/Layout/Projects/Projects";
+@use "../Components/Sub-Components/Project-Card/Project-Card";
+@use "./Responsive";

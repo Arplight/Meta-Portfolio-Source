@@ -1,0 +1,89 @@
+@use "./Variables";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+a,
+p {
+  color: Variables.$fontColorLight;
+  font-weight: 700;
+}
+p {
+  font-size: Variables.$mediumTextSize;
+}
+h1 {
+  font-size: Variables.$introHeadingSize;
+  font-weight: 700;
+}
+h2 {
+  font-size: Variables.$mainHeadingsSize;
+}
+h3 {
+  font-size: Variables.$cardHeaderSize;
+  color: Variables.$fontColorDark;
+}
+input,
+textarea,
+select {
+  background-color: rgba(240, 248, 255, 0);
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.315);
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 7px;
+  color: Variables.$fontColorLight;
+  font-size: Variables.$smallTextSize;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1366px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto 100vh auto auto auto;
+  grid-template-areas: "nav" "header" "projects" "Contact" "footer";
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+nav {
+  grid-area: nav;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+header {
+  grid-area: header;
+}
+.projects {
+  grid-area: projects;
+}
+.Contact {
+  grid-area: Contact;
+}
+footer {
+  grid-area: footer;
+}
+nav,
+header,
+.projects,
+form,
+footer {
+  display: flex;
+}

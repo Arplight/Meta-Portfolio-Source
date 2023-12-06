@@ -1,0 +1,111 @@
+@use "./Variables";
+
+@media only screen and (max-width: 992px) {
+  header .container,
+  .Contact .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .container,
+  .Contact .container {
+    width: 80%;
+  }
+  header .container h1 {
+    font-size: calc(20px + 1vw);
+    line-height: 45px;
+  }
+  nav {
+    ul {
+      justify-content: center;
+      gap: 50px;
+      .btn {
+        display: none;
+      }
+    }
+  }
+  .nav-mobile-menu {
+    display: flex;
+    position: fixed;
+    right: 0px;
+    top: 125px;
+    z-index: 10;
+    border-top-left-radius: Variables.$borderRadious;
+    border-bottom-left-radius: Variables.$borderRadious;
+    background-color: Variables.$navVsFooterBg;
+    opacity: 0.9;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.192);
+    overflow: hidden;
+    .menu-btn {
+      background-color: rgba(240, 248, 255, 0);
+      border: none;
+      outline: none;
+      padding: 5px;
+      border-right: 1px solid rgba(255, 255, 255, 0.089);
+
+      .icon {
+        color: Variables.$fontColorLight;
+        font-size: 18px;
+      }
+    }
+    ul {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      height: 100%;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .icon {
+          font-size: 20px;
+          color: Variables.$fontColorLight;
+          border-right: 1px solid rgba(255, 255, 255, 0.308);
+          padding-right: 5px;
+          margin-right: 5px;
+        }
+      }
+      button {
+        background-color: rgba(240, 248, 255, 0);
+        color: Variables.$fontColorLight;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 620px) {
+  .projects .container .project-card {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header .container,
+  .Contact .container {
+    width: 100%;
+  }
+  header .container h1 {
+    margin-top: 15px;
+  }
+  h2 {
+    font-size: Variables.$mainHeadingsSizeMobile;
+  }
+  p {
+    font-size: Variables.$smallTextSize;
+  }
+  header .container .profile-pic {
+    width: Variables.$profilePicSizeMobile;
+    height: Variables.$profilePicSizeMobile;
+  }
+  .projects h2 {
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .Contact .container {
+    margin-block: 150px;
+  }
+}
