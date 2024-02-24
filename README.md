@@ -9,7 +9,6 @@
 
 - [🙌 Contributors](#contributors)
 
-- [📄 License](#license)
 
 ## 💻 Stack
 - [formik](https://formik.org/): Handling forms and form validation.
