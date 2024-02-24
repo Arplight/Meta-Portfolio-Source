@@ -21,7 +21,7 @@
 - [vitejs/plugin-react](https://vitejs.dev/): Vite plugin for React development.
 - [eslint](https://eslint.org/): Code linting for maintaining code quality.
 
-  ## 📝 Project Summary
+## 📝 Project Summary
 
 - [**src**](src): Main source code directory containing components, styles, assets, and data.
 - [**src/Components**](src/Components): Houses all main components of the application.
@@ -34,7 +34,7 @@
 - [**src/assets/Profile-Picture**](src/assets/Profile-Picture): Directory for storing user profile pictures.
 - [**src/data**](src/data): Contains data used within the application.
 
-  ## 🚀 Run Locally
+## 🚀 Run Locally
 
 1.Clone the Meta-Portfolio-Source repository:
 ```sh
